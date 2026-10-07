@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 
 const projects = [
-  { id: "msynth", title: "M-Synth Modular Synth", discipline: "Hardware Interaction · 2025", image: "/assets/m-synth.png" },
-  { id: "nexus", title: "NEXUS Rehabilitation System", discipline: "Wearable System · 2026", image: "/assets/nexus.png" },
-  { id: "rail", title: "Rail Hub Spatial Study", discipline: "Spatial Design · 2025", image: "/assets/rail-hub.png" },
+  { id: "msynth", title: "M-Synth Modular Synth", discipline: "Hardware Interaction · 2025", image: `${import.meta.env.BASE_URL}assets/m-synth.png` },
+  { id: "nexus", title: "NEXUS Rehabilitation System", discipline: "Wearable System · 2026", image: `${import.meta.env.BASE_URL}assets/nexus.png` },
+  { id: "rail", title: "Rail Hub Spatial Study", discipline: "Spatial Design · 2025", image: `${import.meta.env.BASE_URL}assets/rail-hub.png` },
 ];
 
 const layout = [
