@@ -16,11 +16,19 @@ if (/["']\/assets\//.test(html)) throw new Error("An absolute image path remains
 new Function(inlineModule[1]);
 
 const imageReferences = [...new Set(
-  [...html.matchAll(/public\/assets\/[A-Za-z0-9._-]+/g)].map((match) => match[0]),
+  [...html.matchAll(/public\/assets\/[A-Za-z0-9._/-]+/g)].map((match) => match[0]).filter((reference) => !reference.endsWith("/")),
 )];
 
-if (imageReferences.length !== 3) {
-  throw new Error(`Expected three image assets, found ${imageReferences.length}.`);
+if (imageReferences.filter((reference) => !reference.includes("/team-project/")).length !== 141) {
+  throw new Error("An existing portfolio image reference is missing.");
+}
+
+// TeamProject uses a base-path helper, so verify its dynamic references as well.
+const teamSource = fs.readFileSync(path.join(projectRoot, "src", "TeamProject.jsx"), "utf8");
+const teamFiles = [...new Set([...teamSource.matchAll(/"([a-z-]+\.(?:png|svg))"/g)].map(match => match[1]))];
+for (const filename of teamFiles) {
+  if (!html.includes(filename)) throw new Error(`Missing bundled team asset: ${filename}`);
+  imageReferences.push(`public/assets/team-project/${filename}`);
 }
 
 for (const imageReference of imageReferences) {

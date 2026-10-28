@@ -1,0 +1,164 @@
+.union-detail { --union-accent: #a32b3b; }
+.union-detail .project-background { object-position: center; }
+.union-detail .project-paper { min-height: 0; }
+.union-detail .union-video { margin-bottom: 48px; }
+.union-heading { display: grid; grid-template-columns: 1.15fr 1fr; gap: 64px; align-items: end; padding-bottom: 64px; }
+.union-heading h1 { font-size: clamp(48px, 6vw, 76px); }
+.union-heading h2 { max-width: 430px; font-size: 23px; }
+.union-heading .union-introduction p { margin: 22px 0 0; font-size: 16px; letter-spacing: 0; line-height: 1.7; }
+.union-introduction time { color: var(--muted); font-size: 13px; }
+.union-body { padding: 0 64px 72px; }
+.union-body h3 { margin: 0 0 14px; font-size: 19px; font-weight: 600; line-height: 1.4; letter-spacing: -.02em; }
+.union-body p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+.union-detail figure { margin: 0; }
+.union-detail figure img, .union-interview > img { display: block; width: 100%; height: auto; }
+.union-section-title { margin: 0 0 36px; border-top: 1px solid var(--hairline); padding-top: 24px; font-size: 28px; font-weight: 500; letter-spacing: -.035em; }
+.union-section-title::after { content: ""; display: block; width: 44px; height: 2px; margin-top: 16px; background: var(--union-accent); }
+.union-research-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px; }
+.union-stakeholders { padding: 32px 12px; }
+.union-interview { padding: 26px 0 0; }
+.union-interview > img { margin: 20px 0 14px; }
+.union-body .union-caption { font-size: 12px; }
+.union-theory { display: flex; align-items: start; gap: 22px; margin-bottom: 38px; }
+.union-theory > img { width: 72px; height: 72px; object-fit: cover; }
+.union-theory h3 { font-size: 17px; }
+.union-theory p { font-size: 14px; }
+.union-theory span { display: block; margin-top: 10px; font-size: 12px; color: var(--muted); }
+.union-vertical-flow { display: flex; justify-content: center; gap: 24px; margin: 28px 0 38px; }
+.union-vertical-flow > div { display: flex; flex-direction: column; text-align: center; }
+.union-vertical-flow span { padding: 12px 20px; background: #333; color: #fff; border-radius: 5px; font-size: 12px; }
+.union-vertical-flow span:last-child { background: #683b42; }
+.union-vertical-flow b { line-height: 1.8; font-size: 23px; font-weight: 400; color: var(--union-accent); }
+.union-relationships { margin: 22px 0 !important; }
+.union-horizontal-study { margin-top: 56px; }
+.union-horizontal-study .union-relationships { width: 100%; max-width: none; margin: 28px 0 16px !important; }
+.union-horizontal-study > p { max-width: 880px; }
+.union-technology { margin-top: 72px; }
+.union-tech-row { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 56px; padding: 32px 0; border-bottom: 1px solid #dedede; }
+.union-tech-row:last-child { border-bottom: 0; padding-bottom: 0; }
+.union-tech-row figure { width: 100%; max-width: 330px; margin: auto; }
+.union-tech-row figure img { max-height: 240px; object-fit: contain; }
+.union-body .union-principle { margin-top: 16px; color: var(--union-accent); font-size: 14px; font-weight: 600; }
+.union-definition { padding: 48px 40px 40px; background: #282828; color: #fff; }
+.union-definition-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; margin: 0 0 40px; text-align: left; }
+.union-definition h2 { margin: 0; font-size: 30px; font-weight: 500; letter-spacing: -.035em; text-align: left; }
+.union-definition-intro p { margin: 0; color: #ccc; font-size: 15px; line-height: 1.65; }
+.union-definition figure { background: #282828; }
+.union-definition-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin: 36px 24px 0; border-top: 1px solid #626262; padding-top: 26px; }
+.union-definition-notes p { margin: 0; font-size: 16px; }
+.union-definition-notes span { display: block; margin-top: 10px; color: #ccc; font-size: 14px; line-height: 1.65; }
+.union-process-content { padding-top: 72px; }
+.union-process-content > section + section { margin-top: 80px; }
+.union-body .union-party-flow { display: flex; align-items: center; gap: 28px; margin-bottom: 40px; color: var(--union-accent); font-size: 20px; font-weight: 600; }
+.union-party-flow span { font-size: 28px; font-weight: 400; }
+.union-authorization-grid { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); gap: 72px; align-items: start; }
+.union-authorization-grid > figure { width: 100%; max-width: 330px; }
+.union-authorization-steps { display: flex; flex-direction: column; gap: 50px; margin: 0; padding: 14px 0 0; list-style: none; }
+.union-authorization-steps li { display: grid; grid-template-columns: 34px minmax(0,1fr); gap: 20px; }
+.union-step-number { color: var(--union-accent); font-size: 17px; line-height: 1.5; font-variant-numeric: tabular-nums; }
+.union-body .union-process-lead { font-size: 17px; margin-bottom: 36px; }
+.union-journey { list-style: none; margin: 0; padding: 0; }
+.union-journey li { display: grid; grid-template-columns: 90px minmax(0,1fr) 190px; gap: 32px; align-items: center; padding: 28px 0; border-bottom: 1px solid #dedede; }
+.union-journey li:first-child { padding-top: 0; }
+.union-journey li > img { display: block; width: 100%; height: 122px; object-fit: contain; }
+.union-rationale { display: grid; grid-template-columns: 1.3fr 1fr; gap: 28px; margin-top: 40px; align-items: start; }
+.union-rationale aside { padding: 28px; background: #282828; color: #fff; }
+.union-rationale h3 { color: #ed8c98; }
+.union-rationale aside p { color: #ddd; font-size: 14px; }
+.union-rationale aside p + p { margin-top: 18px; }
+.union-rationale img { float: right; width: 100px; height: auto; margin: 0 0 18px 20px; }
+.union-operation-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 56px 40px; }
+.union-operation-drawing img { aspect-ratio: 620/338; object-fit: contain; }
+.union-operation-copy { padding: 26px 0 22px; }
+.union-operation-copy h4 { display: flex; align-items: baseline; gap: 14px; margin: 0 0 12px; font-size: 17px; font-weight: 500; }
+.union-operation-copy h4 span { color: var(--union-accent); font-size: 13px; }
+.union-operation-copy p { min-height: 75px; }
+.union-operation-photo img { background: #2d2d2d; }
+.union-interaction-grid { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); gap: 64px; align-items: start; }
+.union-interaction-grid > figure { max-width: 550px; }
+.union-interaction-grid > div { padding-top: 12px; }
+.union-interaction-grid > div p + p { margin-top: 24px; }
+.union-object { padding-top: 8px; }
+.union-radio { display: grid; grid-template-columns: minmax(0,1fr) 220px; gap: 80px; align-items: center; margin-bottom: 64px; }
+.union-radio > figure { width: 190px; margin: auto; }
+.union-object figcaption { padding-top: 14px; font-size: 12px; color: var(--muted); }
+.union-radio-route { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; margin-top: 26px; font-size: 13px; }
+.union-radio-route b { font-size: 19px; font-weight: 400; color: var(--union-accent); }
+.union-object-heading { display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: start; margin-bottom: 28px; }
+.union-object-structure { background: #efefef; padding: 28px; }
+.union-object-structure svg { display: block; width: 100%; max-width: 920px; margin: auto; height: auto; }
+.union-object-experience { padding: 56px 64px 64px; background: #282828; color: #fff; }
+.union-object-experience > header { margin-bottom: 36px; }
+.union-object-experience h2 { margin: 0 0 16px; font-size: 30px; font-weight: 500; letter-spacing: -.035em; }
+.union-object-experience header p { margin: 0; color: #ccc; font-size: 15px; line-height: 1.65; }
+.union-object-experience figcaption { padding-top: 14px; color: #ccc; font-size: 12px; line-height: 1.5; }
+.union-object-details { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px; margin-top: 40px; }
+.union-object-actions { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; margin-top: 48px; padding-top: 32px; border-top: 1px solid #626262; }
+.union-object-actions img { aspect-ratio: 622/369; object-fit: contain; }
+.union-object-actions figcaption { display: flex; gap: 14px; }
+.union-object-actions figcaption span { color: #aaa; font-variant-numeric: tabular-nums; }
+.union-detail .union-object-closing { margin-top: 48px; }
+@media (max-width: 850px) {
+  .union-radio { grid-template-columns: minmax(0,1fr) 160px; gap: 32px; }
+  .union-radio > figure { width: 150px; }
+  .union-object-experience { padding: 48px 36px; }
+  .union-object-heading { gap: 28px; }
+  .union-object-actions { gap: 16px; }
+  .union-authorization-grid { gap: 36px; }
+  .union-authorization-steps { gap: 28px; padding-top: 0; }
+  .union-journey li { grid-template-columns: 65px minmax(0,1fr) 120px; gap: 20px; }
+  .union-journey li > img { height: 100px; }
+  .union-rationale { grid-template-columns: 1fr; }
+  .union-operation-grid { gap: 40px 28px; }
+  .union-interaction-grid { grid-template-columns: 1fr; gap: 32px; }
+  .union-interaction-grid > figure { width: 100%; margin-inline: auto; }
+  .union-heading { gap: 32px; padding: 64px 36px 48px; }
+  .union-body { padding: 0 36px 56px; }
+  .union-research-grid { grid-template-columns: 1fr; gap: 48px; }
+  .union-stakeholders { max-width: 540px; margin: auto !important; }
+  .union-interview { max-width: 600px; }
+  .union-relationships { max-width: 650px; }
+  .union-tech-row { gap: 32px; }
+  .union-definition { padding: 36px 24px; }
+  .union-definition-intro { gap: 24px; }
+}
+@media (max-width: 560px) {
+  .union-radio { grid-template-columns: 1fr; gap: 28px; margin-bottom: 40px; }
+  .union-radio > figure { width: 170px; }
+  .union-radio-route { gap: 10px; font-size: 12px; }
+  .union-object-heading { grid-template-columns: 1fr; gap: 8px; }
+  .union-object-structure { padding: 12px; }
+  .union-object-experience { padding: 36px 24px; }
+  .union-object-experience h2 { font-size: 26px; }
+  .union-object-details, .union-object-actions { grid-template-columns: 1fr; gap: 28px; margin-top: 32px; }
+  .union-process-content { padding-top: 48px; }
+  .union-process-content > section + section { margin-top: 56px; }
+  .union-body .union-party-flow { font-size: 16px; gap: 18px; margin-bottom: 28px; }
+  .union-authorization-grid { grid-template-columns: 1fr; gap: 32px; }
+  .union-authorization-grid > figure { width: 78%; margin-inline: auto; }
+  .union-authorization-steps li { grid-template-columns: 28px minmax(0,1fr); gap: 14px; }
+  .union-journey li { grid-template-columns: 1fr 100px; gap: 12px 16px; }
+  .union-journey .union-step-number { grid-column: 1/-1; font-size: 14px; }
+  .union-journey li > img { height: 90px; }
+  .union-rationale aside { padding: 24px; }
+  .union-rationale img { width: 80px; }
+  .union-operation-grid { grid-template-columns: 1fr; gap: 40px; }
+  .union-operation-copy p { min-height: 0; }
+  .union-heading { grid-template-columns: 1fr; padding: 56px 24px 42px; gap: 28px; }
+  .union-heading h2 { font-size: 21px; }
+  .union-heading .union-introduction p { font-size: 15px; margin-top: 14px; }
+  .union-body { padding: 0 24px 48px; }
+  .union-section-title { font-size: 25px; margin-bottom: 28px; }
+  .union-theory { gap: 16px; }
+  .union-theory > img { width: 56px; height: 56px; }
+  .union-vertical-flow { gap: 16px; }
+  .union-vertical-flow span { padding: 12px 16px; }
+  .union-tech-row { grid-template-columns: 1fr; gap: 28px; padding-block: 32px; }
+  .union-tech-row figure { max-width: 270px; }
+  .union-technology { margin-top: 48px; }
+  .union-definition { padding: 32px 16px; }
+  .union-definition-intro { grid-template-columns: 1fr; margin: 0 0 28px; gap: 20px; }
+  .union-definition h2 { font-size: 26px; }
+  .union-definition-notes { grid-template-columns: 1fr; margin-inline: 8px; gap: 24px; }
+  .union-detail .project-paper-footer { padding: 32px 24px; }
+}

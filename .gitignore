@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.log
+双击打开网站.html
+.env
+.env.*
+!.env.example

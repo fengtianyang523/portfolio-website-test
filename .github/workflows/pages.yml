@@ -29,6 +29,8 @@ jobs:
         run: npm ci
       - name: Build website
         run: npm run build
+      - name: Verify deployment packaging
+        run: npm run test:sites
       - name: Upload website artifact
         uses: actions/upload-pages-artifact@v3
         with:
