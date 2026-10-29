@@ -4,7 +4,7 @@ Latest user direction: gallery drift continues during pointer hover, keyboard fo
 
 # Layout correction — 2026-10-29
 
-Latest user direction supersedes the special Team Project row and uncropped selected-work covers: all five selected-work cards share the same two-column grid, 3:2 cover crop and caption style; stack on phones. Hero ribbon variation stays intact. NEXUS AI control uses aligned live bilingual three-stage panels with sequential arrows, stacked below 800px; retain the original lower process illustration. Runtime owners: src/App.jsx and src/styles.css.
+The first four selected-work cards share the two-column grid, 3:2 cover crop and caption style. Team Project is restored to its separate full-width row: text left, cover right, hairline above, centered vertically; stack text then cover below 720px. All five covers retain the aligned 3:2 crop. Hero ribbon variation stays intact. NEXUS AI control uses aligned live bilingual three-stage panels with sequential arrows, stacked below 800px; retain the original lower process illustration. Runtime owners: src/App.jsx and src/styles.css.
 
 # Prototype Instructions
 

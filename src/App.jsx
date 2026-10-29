@@ -1159,7 +1159,7 @@ export function App() {
         </div>
         <div className="works-grid">
           {localizedCards.map((project) => (
-            <article className="work-card" key={project.id}>
+            <article className={`work-card${project.id === "team-project" ? " work-card-team" : ""}`} key={project.id}>
               <a className="work-cover" href={`#/projects/${project.id}`} aria-label={`${isZh ? "查看项目" : "View project"}: ${project.title}`}>
                 <img src={project.image} alt={project.title} loading="lazy" />
                 <span className="work-view">{isZh ? "查看项目" : "View project"} <span aria-hidden="true">↗</span></span>
