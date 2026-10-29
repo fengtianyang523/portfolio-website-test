@@ -1,3 +1,7 @@
+# Continuous homepage gallery — 2026-10-29
+
+Latest user direction: gallery drift continues during pointer hover, keyboard focus and activation; remove all hover/focus animation pauses. Keep the existing speed, seamless repeated sequences, hover enlargement/color, captions and project links. Preserve the system reduced-motion preference. Runtime animation owner: src/styles.css; no opening-specific play-state override is needed.
+
 # Layout correction — 2026-10-29
 
 Latest user direction supersedes the special Team Project row and uncropped selected-work covers: all five selected-work cards share the same two-column grid, 3:2 cover crop and caption style; stack on phones. Hero ribbon variation stays intact. NEXUS AI control uses aligned live bilingual three-stage panels with sequential arrows, stacked below 800px; retain the original lower process illustration. Runtime owners: src/App.jsx and src/styles.css.
@@ -10,7 +14,7 @@ Data Union participant-scene gallery crop: trim 5% from the right of cover-based
 
 Latest user update removes the opening identity text and its fade stage. Show only the plain dark gray curtain for 1800ms, followed by the existing upward slide and gradual sharpening. All earlier instructions to display I AM TIANYANG FENG are superseded.
 
-Smoothness refinement: gallery drift runs underneath the curtain from the start and remains running through the clearing phase even if the pointer overlaps it. After the 950ms slide, the visible hero resolves from 12px blur to sharp over 850ms with an ease-out curve. Restrict filtering to the hero for rendering performance; restore ordinary hover/focus pause and interaction after clearing. This replaces the abrupt end-of-slide deblur.
+Smoothness refinement: gallery drift runs underneath the curtain from the start and remains running through the clearing phase even if the pointer overlaps it. After the 950ms slide, the visible hero resolves from 12px blur to sharp over 850ms with an ease-out curve. Restrict filtering to the hero for rendering performance; restore interaction after clearing while gallery drift continues. This replaces the abrupt end-of-slide deblur.
 
 Latest sequence: 1800ms hold → 350ms identity-text fade → 950ms upward curtain slide. Homepage stays stationary and blurred at 12px until the curtain has left, then becomes sharp. No progressive deblurring during the slide. Reduced motion uses shorter text/panel fades.
 
@@ -76,7 +80,7 @@ Runtime owner: `src/styles.css :root`. CSS variables map directly to the palette
 
 - The project caption above the homepage statement follows the crosshair/nearest photograph while drifting, updates immediately on photo hover or keyboard focus, and shares identity across repeated loop copies. Reserve caption height so changing names does not move the headline. Omit the former Beijing / Available for collaboration line beneath the statement.
 
-- The gallery drifts horizontally at a slow constant pace and pauses for hover/focus.
+- The gallery drifts horizontally at a slow constant pace and continues during hover/focus.
 - A crosshair tracks the pointer only inside the gallery band; both axes fade before their fixed band edges. Only Product/Interaction stays fixed at the top center.
 - In the resting state, photographs keep a muted but clearly visible trace of their original color. Image hover/focus enlarges the card and restores full color. Image activation briefly darkens the photograph and updates the selected-project caption.
 - The Profile dialog keeps vertical scrolling while hiding its local scrollbar. Clicking the dimmed area outside the dialog or pressing Escape closes it; interaction inside the paper surface does not.

@@ -2,7 +2,6 @@
 .opening-curtain { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; overflow: hidden; background: var(--opening-background); color: var(--opening-ink); transform-origin: center top; backface-visibility: hidden; }
 .opening-hold .hero, .opening-reveal .hero { filter: blur(12px); will-change: filter; }
 .opening-clearing .hero { filter: blur(0); transition: filter 850ms cubic-bezier(.22,1,.36,1); will-change: filter; }
-.opening-stage:not(.opening-done) .gallery-run { animation-play-state: running !important; }
 .opening-reveal .opening-curtain { animation: opening-slide-up 950ms cubic-bezier(.76,0,.24,1) both; }
 @keyframes opening-slide-up {
   from { transform: translateY(0); }

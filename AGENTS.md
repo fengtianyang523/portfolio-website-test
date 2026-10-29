@@ -1,3 +1,7 @@
+# Continuous homepage gallery — 2026-10-29
+
+Latest user direction: gallery drift continues during pointer hover, keyboard focus and activation; remove all hover/focus animation pauses. Keep the existing speed, seamless repeated sequences, hover enlargement/color, captions and project links. Preserve the system reduced-motion preference. Runtime animation owner: src/styles.css; no opening-specific play-state override is needed.
+
 # Layout correction — 2026-10-29
 
 Latest user direction supersedes the special Team Project row and uncropped selected-work covers: all five selected-work cards share the same two-column grid, 3:2 cover crop and caption style; stack on phones. Hero ribbon variation stays intact. NEXUS AI control uses aligned live bilingual three-stage panels with sequential arrows, stacked below 800px; retain the original lower process illustration. Runtime owners: src/App.jsx and src/styles.css.
@@ -10,7 +14,7 @@ Homepage Data Union participant-scene gallery images: crop 5% off the right edge
 
 Latest update: remove I AM TIANYANG FENG completely, including its fade stage and accessible label. The opening is now a plain dark gray curtain: hold 1800ms, slide upward for 950ms, then resolve hero blur over 850ms. Retain gallery drift, reduced-motion fallback, Escape skip and session persistence.
 
-Latest smoothness refinement: keep the gallery drifting before and throughout the opening, overriding hover/focus pause until the opening completes. After the curtain finishes sliding away, gradually resolve blur over 850ms (180ms reduced motion) rather than snapping sharp. Apply blur only to the visible hero, not the entire long homepage, to avoid an oversized filtered layer. Restore normal hover/focus behavior and release scroll/interaction after the clearing phase. This supersedes the prior immediate blur removal.
+Latest smoothness refinement: keep the gallery drifting before and throughout the opening, overriding hover/focus pause until the opening completes. After the curtain finishes sliding away, gradually resolve blur over 850ms (180ms reduced motion) rather than snapping sharp. Apply blur only to the visible hero, not the entire long homepage, to avoid an oversized filtered layer. Keep gallery drift running during hover/focus and release scroll/interaction after the clearing phase. This supersedes the prior immediate blur removal.
 
 Latest motion refinement: after the 1800ms hold, fade I AM TIANYANG FENG out over 350ms before the dark curtain starts its 950ms upward slide. Keep the underlying homepage stationary and blurred at 12px for the entire opening; remove blur only when the curtain animation finishes. Reduced motion uses 180ms fades. Replay the updated opening in the right-side preview when done.
 
