@@ -1,3 +1,7 @@
+# Layout correction — 2026-10-29
+
+Latest user direction supersedes the special Team Project row and uncropped selected-work covers: all five selected-work cards share the same two-column grid, 3:2 cover crop and caption style; stack on phones. Hero ribbon variation stays intact. NEXUS AI control uses aligned live bilingual three-stage panels with sequential arrows, stacked below 800px; retain the original lower process illustration. Runtime owners: src/App.jsx and src/styles.css.
+
 # Tianyang Feng — Horizontal Editorial Portfolio
 
 Data Union participant-scene gallery crop: trim 5% from the right of cover-based ribbon photographs via left-anchored 105.263% image width inside clipped slots. Preserve ribbon geometry and original asset for all other placements.

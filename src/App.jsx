@@ -801,8 +801,15 @@ export function App() {
         </section>
         <section className="nexus-ai-section" aria-labelledby="nexus-ai-title">
           <h2 id="nexus-ai-title">07 {isZh ? "AI 驱动的闭环康复控制" : "AI-Driven Closed-Loop Rehabilitation Control"}</h2>
-          <figure>
-            <img src={`${import.meta.env.BASE_URL}assets/nexus-ai-control.png`} width="2048" height="1480" alt={isZh ? "AI 闭环康复控制流程图：设备采集角度、压力与训练数据，经数据训练与 API 推理后输出患者端控制指令；下方展示患者运动、传感器数据、AI 推理、气囊控制和充气的流程。" : "AI-driven closed-loop rehabilitation control diagram: angle, pressure and session data flow through data training and an API to patient-side commands. The lower sequence shows patient motion, sensor data, AI inference, airbag control and inflation."} loading="lazy" />
+          <div className="nexus-control-flow">
+            {[
+              { title: isZh ? "数据采集" : "Data Collection", label: isZh ? "充气式腕部设备" : "Inflatable Wrist Device", items: isZh ? ["角度", "压力", "训练数据"] : ["Angle", "Pressure", "Session Data"] },
+              { title: isZh ? "预训练 AI 模型" : "Pre-Trained AI Model", label: isZh ? "数据训练 + API" : "Data Training + API", items: isZh ? ["接收传感器数据", "AI 推理", "输出控制指令"] : ["Receive sensor data", "AI inference", "Output control commands"] },
+              { title: isZh ? "实时反馈控制" : "Real-Time Feedback Control", label: isZh ? "腕部气囊充气控制" : "Wrist Airbag Control", items: isZh ? ["防止过度伸展", "达到气囊目标", "继续保持 6 秒"] : ["Prevent hyperextension", "Airbag target reached", "Keep holding for 6 more seconds"] }
+            ].map(stage => <section className="nexus-control-stage" key={stage.title}><h3>{stage.title}</h3><div className="nexus-control-panel"><h4>{stage.label}</h4><ul>{stage.items.map(item => <li key={item}>{item}</li>)}</ul></div></section>)}
+          </div>
+          <figure className="nexus-control-sequence">
+            <svg viewBox="0 1070 2270 470" role="img" aria-label={isZh ? "患者运动、传感器数据、AI 推理、气囊控制和充气流程" : "Patient motion, sensor data, AI inference, airbag control and inflation"}><image href={`${import.meta.env.BASE_URL}assets/nexus-ai-control.png`} width="2270" height="1640" /></svg>
           </figure>
         </section>
         <section className="nexus-reflection-section" aria-labelledby="nexus-reflection-title">
@@ -1152,7 +1159,7 @@ export function App() {
         </div>
         <div className="works-grid">
           {localizedCards.map((project) => (
-            <article className={`work-card${project.id === "team-project" ? " work-card-team" : ""}`} key={project.id}>
+            <article className="work-card" key={project.id}>
               <a className="work-cover" href={`#/projects/${project.id}`} aria-label={`${isZh ? "查看项目" : "View project"}: ${project.title}`}>
                 <img src={project.image} alt={project.title} loading="lazy" />
                 <span className="work-view">{isZh ? "查看项目" : "View project"} <span aria-hidden="true">↗</span></span>
