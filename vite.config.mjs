@@ -2,8 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  // GitHub Pages serves this project under /<repository>/; local preview stays at /.
-  base: process.env.GITHUB_ACTIONS ? "/portfolio-website-test/" : "/",
+  // The configured GitHub Pages custom domain serves this site at its root.
+  base: "/",
   build: {
     outDir: "dist/client",
   },
